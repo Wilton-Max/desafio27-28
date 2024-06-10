@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="style.css">
+
+<!-------------jquery para o REGEX do CEP-------------------->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+<!--Faça um formulário de cadastro de usuário, 
+o formulário deve puxar as informações de endereço usando a API do ViaCEP. O formulário deve ter os seguintes campos:
+● Nome, Sobrenome e E-mail;
+● CEP, Rua, Bairro, Cidade e Estado.
+
+https://viacep.com.br/
+!-->
+
+<body>
+    <h1>Cadastro</h1>
+
+    <form>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required onblur="requeryCep()">
+        </div>
+
+        <div>
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua" name="rua">
+        </div>
+
+        <div>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro">
+        </div>
+
+        <div>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade">
+        </div>
+
+        <div>
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado">
+        </div>
+
+        <button onclick="formSend()">Cadastrar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

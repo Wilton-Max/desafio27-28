@@ -1,0 +1,53 @@
+body{
+    width: 700px;
+    background-image: radial-gradient(circle at 87.5% 12.5%, #7b1dca 0, #5716ca 25%, #0a14ca 50%,
+     #0016ca 75%, #001bc9 100%);
+     text-align: center;
+}
+h1{
+    margin-left: 80%;
+    color: #e8e8e8;  
+}
+div{
+    width: 500px;
+    margin: 0 auto;   
+    text-align: center;
+    
+}
+
+form{
+    width: 500px;
+    border: none; 
+    border-radius: 10px;
+    position: relative; left: 50%;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 20, 0.3); 
+    color: #e8e8e8;    
+}
+
+label {
+    font-size: 20px;
+    display: block; 
+    margin-bottom: 5px;   
+}
+  
+input {
+    width: 50%; 
+    padding: 8px; 
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 20, 0.8);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover{
+    scale: 1.1;
+}
