@@ -13,9 +13,9 @@ function requeryCep() {
     cep = cep.value
     if (cep.length !== 9) return;
 
-    const url = `https://viacep.com.br/ws/${cep}/json/`;
+    const api = `https://viacep.com.br/ws/${cep}/json/`;
 
-    fetch(url)
+    fetch(api)
         .then(response => response.json())
         .then(adress => {
             if (adress.erro) {
